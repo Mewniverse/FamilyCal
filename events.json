@@ -8,18 +8,13 @@
       "type": "anniversary"
     },
     {
-      "date": "2026-11-01",
-      "title": "Daylight Saving Time Ends",
-      "type": "holiday"
-    },
-    {
       "date": "2026-11-05",
       "title": "Elliott & Mia's Birthday",
       "type": "birthday"
     },
     {
       "date": "2026-11-09",
-      "title": "Siennah's Birthday",
+      "title": "Sierrah's Birthday",
       "type": "birthday"
     },
     {
@@ -28,24 +23,9 @@
       "type": "birthday"
     },
     {
-      "date": "2026-11-11",
-      "title": "Veterans Day",
-      "type": "holiday"
-    },
-    {
-      "date": "2026-11-26",
-      "title": "Thanksgiving",
-      "type": "holiday"
-    },
-    {
       "date": "2026-12-02",
       "title": "Mike's Birthday",
       "type": "birthday"
-    },
-    {
-      "date": "2026-12-04",
-      "title": "Hanukkah Begins",
-      "type": "holiday"
     },
     {
       "date": "2026-12-14",
@@ -56,11 +36,6 @@
       "date": "2026-12-19",
       "title": "Nik's Birthday",
       "type": "birthday"
-    },
-    {
-      "date": "2026-12-25",
-      "title": "Christmas",
-      "type": "holiday"
     },
     {
       "date": "2026-12-27",
