@@ -4,7 +4,7 @@
   "events": [
     {
       "date": "2026-11-01",
-      "title": "A.'s Anniversary",
+      "title": "Alisha's Anniversary",
       "type": "anniversary"
     },
     {
@@ -14,17 +14,17 @@
     },
     {
       "date": "2026-11-05",
-      "title": "E. & M.'s Birthday",
+      "title": "Elliott & Mia's Birthday",
       "type": "birthday"
     },
     {
       "date": "2026-11-09",
-      "title": "S.'s Birthday",
+      "title": "Siennah's Birthday",
       "type": "birthday"
     },
     {
       "date": "2026-11-11",
-      "title": "L.'s Birthday",
+      "title": "Luka's Birthday",
       "type": "birthday"
     },
     {
@@ -39,7 +39,7 @@
     },
     {
       "date": "2026-12-02",
-      "title": "M.'s Birthday",
+      "title": "Mike's Birthday",
       "type": "birthday"
     },
     {
@@ -49,12 +49,12 @@
     },
     {
       "date": "2026-12-14",
-      "title": "A.'s Birthday",
+      "title": "Ari's Birthday",
       "type": "birthday"
     },
     {
       "date": "2026-12-19",
-      "title": "N.'s Birthday",
+      "title": "Nik's Birthday",
       "type": "birthday"
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "date": "2026-12-27",
-      "title": "A. & R.'s Birthday",
+      "title": "Amichi & Rich's Birthday",
       "type": "birthday"
     }
   ]
