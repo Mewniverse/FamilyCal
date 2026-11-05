@@ -36,6 +36,36 @@
       "date": "2026-11-26",
       "title": "Thanksgiving",
       "type": "holiday"
+    },
+    {
+      "date": "2026-12-02",
+      "title": "M.'s Birthday",
+      "type": "birthday"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Hanukkah Begins",
+      "type": "holiday"
+    },
+    {
+      "date": "2026-12-14",
+      "title": "A.'s Birthday",
+      "type": "birthday"
+    },
+    {
+      "date": "2026-12-19",
+      "title": "N.'s Birthday",
+      "type": "birthday"
+    },
+    {
+      "date": "2026-12-25",
+      "title": "Christmas",
+      "type": "holiday"
+    },
+    {
+      "date": "2026-12-27",
+      "title": "A. & R.'s Birthday",
+      "type": "birthday"
     }
   ]
 }
