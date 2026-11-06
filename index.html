@@ -101,7 +101,9 @@ li[data-type=holiday] .tile b{background:var(--hol)}
 
   <section class="help">
     <h2>Want it to update by itself?</h2>
-    <p>Subscribe once and new months show up automatically. On iPhone, turn off <strong>Remove Alerts</strong> on the subscribe screen to keep the 8 AM alerts. Google Calendar ignores them and uses its own reminders.</p>
+    <p>Subscribe once and new months show up automatically. Pick one: subscribe, or add months one at a time. Doing both gives you every event twice.</p>
+    <p id="ios-sub-note">On iPhone, turn off <strong>Remove Alerts</strong> on the subscribe screen to keep the 8 AM alerts.</p>
+    <p id="android-sub-note">On Android, Google Calendar can only subscribe from a computer. Open this page on a computer signed in to the same Google account, tap Subscribe in Google Calendar, and it syncs to your phone. Google uses its own reminders and can take up to a day to pick up new months.</p>
     <a class="btn ghost" id="sub-link" href="#">Subscribe on iPhone</a>
     <a class="btn ghost" id="gsub-link" href="#" target="_blank" rel="noopener">Subscribe in Google Calendar</a>
     <div class="copyrow">
@@ -203,6 +205,9 @@ li[data-type=holiday] .tile b{background:var(--hol)}
   const isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
   document.getElementById("android-help").hidden = !isAndroid;
   document.getElementById("ios-help").hidden = !isIOS;
+  document.getElementById("sub-link").hidden = isAndroid;
+  document.getElementById("ios-sub-note").hidden = isAndroid;
+  document.getElementById("android-sub-note").hidden = isIOS;
 
   fetch("events.json", { cache: "no-cache" })
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
