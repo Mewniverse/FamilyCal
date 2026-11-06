@@ -102,7 +102,7 @@ li[data-type=holiday] .tile b{background:var(--hol)}
   <section class="help">
     <h2>Want it to update by itself?</h2>
     <p>Subscribe once and new months show up automatically. Pick one: subscribe, or add months one at a time. Doing both gives you every event twice.</p>
-    <p id="ios-sub-note">On iPhone, leave <strong>Event Alerts</strong> switched on when you subscribe so you get the 8 AM alerts. On older iPhones the switch is called <strong>Remove Alerts</strong>; turn that one off.</p>
+    <p id="ios-sub-note">On iPhone, two steps keep the 8 AM alerts. Leave <strong>Event Alerts</strong> on when you subscribe. Then open Calendar, tap <strong>Calendars</strong>, tap the <strong>i</strong> next to Family Calendar, and turn off <strong>Remove Alerts</strong>. iPhone strips alerts from every subscribed calendar until you do.</p>
     <p id="android-sub-note">On Android, Google Calendar can only subscribe from a computer. Open this page on a computer signed in to the same Google account, tap Subscribe in Google Calendar, and it syncs to your phone. Google uses its own reminders and can take up to a day to pick up new months.</p>
     <a class="btn ghost" id="sub-link" href="#">Subscribe on iPhone</a>
     <a class="btn ghost" id="gsub-link" href="#" target="_blank" rel="noopener">Subscribe in Google Calendar</a>
@@ -110,6 +110,13 @@ li[data-type=holiday] .tile b{background:var(--hol)}
       <input id="sub-url" readonly aria-label="Subscription address">
       <button type="button" id="copy">Copy</button>
     </div>
+  </section>
+  <section class="help">
+    <h2>Want to remove it?</h2>
+    <p>A web page can't delete events from your phone, so it takes a few taps.</p>
+    <p><strong>Subscribed on iPhone:</strong> Calendar, Calendars, tap the <strong>i</strong> next to Family Calendar, then <strong>Delete Calendar</strong> at the bottom. Every event goes with it.</p>
+    <p><strong>Subscribed in Google Calendar:</strong> on a computer, open Google Calendar, hover over Family Calendar under "Other calendars", tap the three dots, then <strong>Unsubscribe</strong>.</p>
+    <p><strong>Added a month:</strong> those events went into your own calendar, so delete them one at a time. Subscribing is easier to undo.</p>
   </section>
 </main>
 
