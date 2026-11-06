@@ -63,6 +63,11 @@ li[data-type=holiday] .tile b{background:var(--hol)}
 .chip.other{background:var(--hol-soft);color:var(--muted)}
 .gcal{font-size:.85rem;color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap}
 .btn{display:block;text-align:center;text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px;background:var(--accent);color:var(--on-accent)}
+.btn.sub{background:#b8335f;color:#fff;font-size:1.05rem;padding:15px 16px;box-shadow:0 2px 6px rgb(0 0 0/.18)}
+.steps{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--bday);border-radius:10px;padding:14px;display:grid;gap:8px;color:var(--fg)}
+.steps h3{margin:0;font:700 1rem/1.3 var(--display)}
+.steps ol{margin:0;padding-left:1.25rem;display:grid;gap:4px;list-style:decimal}
+.steps li{display:list-item}
 .btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
 .btn:focus-visible,.gcal:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 .help{display:grid;gap:10px;color:var(--muted);font-size:.95rem}
@@ -101,11 +106,31 @@ li[data-type=holiday] .tile b{background:var(--hol)}
 
   <section class="help">
     <h2>Want it to update by itself?</h2>
-    <p>Subscribe once and new months show up automatically. Pick one: subscribe, or add months one at a time. Doing both gives you every event twice.</p>
-    <p id="ios-sub-note">On iPhone, two steps keep the 8 AM alerts. Leave <strong>Event Alerts</strong> on when you subscribe. Then open Calendar, tap <strong>Calendars</strong>, tap the <strong>i</strong> next to Family Calendar, and turn off <strong>Remove Alerts</strong>. iPhone strips alerts from every subscribed calendar until you do.</p>
-    <p id="android-sub-note">On Android, Google Calendar can only subscribe from a computer. Open this page on a computer signed in to the same Google account, tap Subscribe in Google Calendar, and it syncs to your phone. Google uses its own reminders and can take up to a day to pick up new months.</p>
-    <a class="btn ghost" id="sub-link" href="#">Subscribe on iPhone</a>
-    <a class="btn ghost" id="gsub-link" href="#" target="_blank" rel="noopener">Subscribe in Google Calendar</a>
+    <p>Subscribe once and new months show up on their own. Pick one: subscribe, or add months one at a time. Doing both gives you every event twice.</p>
+    <a class="btn sub" id="sub-link" href="#"><span aria-hidden="true">&#128197;</span> Subscribe on iPhone</a>
+    <a class="btn sub" id="gsub-link" href="#" target="_blank" rel="noopener"><span aria-hidden="true">&#128197;</span> Subscribe in Google Calendar</a>
+    <div class="steps" id="ios-sub-note">
+      <h3>iPhone: keep the 8 AM alerts</h3>
+      <p>iPhone strips alerts from every subscribed calendar until you switch that off.</p>
+      <ol>
+        <li>Tap <strong>Subscribe on iPhone</strong>, then <strong>Subscribe</strong>.</li>
+        <li>Leave <strong>Event Alerts</strong> on and tap the check mark.</li>
+        <li>Open the <strong>Calendar</strong> app and tap <strong>Calendars</strong> at the bottom.</li>
+        <li>Tap the <strong>i</strong> next to <strong>Family Calendar</strong>.</li>
+        <li>Turn <strong>Remove Alerts</strong> off, then tap <strong>Done</strong>.</li>
+      </ol>
+    </div>
+    <div class="steps" id="android-sub-note">
+      <h3>Android: subscribe and set the 8 AM alert</h3>
+      <p>Google Calendar ignores the alerts in the calendar file and uses its own, so you set the time once.</p>
+      <ol>
+        <li>On a computer signed in to the same Google account, open this page and tap <strong>Subscribe in Google Calendar</strong>, then <strong>Add</strong>.</li>
+        <li>On your phone, open <strong>Google Calendar</strong>, tap the menu, then <strong>Settings</strong>.</li>
+        <li>Tap <strong>Family Calendar</strong>, then <strong>All-day event notifications</strong> (or <strong>Default notifications</strong>).</li>
+        <li>Choose <strong>On the day at 8 AM</strong> (pick Custom if it isn't listed).</li>
+      </ol>
+      <p>Google can take up to a day to pick up new months.</p>
+    </div>
     <div class="copyrow">
       <input id="sub-url" readonly aria-label="Subscription address">
       <button type="button" id="copy">Copy</button>
