@@ -30,5 +30,5 @@ Months that are over hide themselves automatically.
 ## Known limits
 
 - Google Calendar on Android usually ignores the 8 AM alert and uses its own default reminder.
-- Subscribed calendars on iPhone drop alerts unless "Remove Alerts" is switched off when subscribing.
+- Subscribed calendars on iPhone keep alerts only if "Event Alerts" is left on (older iOS: "Remove Alerts" off) when subscribing.
 - Re-importing the same month adds duplicates, so each friend should import a month once.
